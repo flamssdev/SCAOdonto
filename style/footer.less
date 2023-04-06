@@ -1,0 +1,87 @@
+body {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+
+            .map {
+                flex: 1;
+                height: 350px;
+                width: 100%;
+                cursor: pointer;
+                
+                a {
+                    
+                    img {
+                        width: 100%;
+                        height: 350px;   
+                    }
+                }
+            }
+
+            .contato {
+                flex: 1;
+                background-color: var(--bege);
+                height: 350px;
+                width: 100%;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h3 {
+                    font-size: 40px;
+                    color: var(--branco);
+                    font-weight: 700;
+
+                }
+
+                .tel, .wtts, .email, .endereco {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    span {
+                        color: var(--branco);
+                        font-size: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .direitos {
+            text-align: center;
+        }
+
+        .capafla {
+            background-color: var(--preto);
+            width: 100%;
+            text-align: center;
+            p {
+                color: var(--branco);
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        footer {
+            .container {
+
+                flex-direction: column;
+
+
+    
+                
+            }
+        }
+    }
+}

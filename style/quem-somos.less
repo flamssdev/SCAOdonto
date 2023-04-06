@@ -1,0 +1,76 @@
+body {
+  main {
+    .thalita {
+      padding: 100px 2% 0;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        .imagem {
+          width: 500px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .descricao {
+          max-width: 400px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h3 {
+            font-size: 40px;
+            color: var(--bege);
+            font-weight: 700;
+            text-align: center;
+          }
+          p {
+            font-size: 20px;
+            text-align: justify;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .efeito {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    main {
+      .thalita {
+        padding: 70px 2% 0;
+        .container {
+          flex-direction: column-reverse;
+
+          .descricao {
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    main {
+      .thalita {
+        .container {
+          .imagem {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
