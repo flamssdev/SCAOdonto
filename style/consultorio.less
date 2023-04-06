@@ -6,13 +6,24 @@ body {
       padding: 120px 2% 0px;
 
       .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 50px;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         .descricao {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           gap: 20px;
           max-width: 500px;
           h3 {
@@ -95,7 +106,10 @@ body {
       .consultorio {
         padding: 70px 2% 0px;
         .container {
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           padding-bottom: 100px;
           .descricao {
             max-width: 600px;
@@ -112,7 +126,10 @@ body {
     main {
       .consultorio {
         .container {
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
 
           .descricao {
             max-width: 600px;

@@ -22,8 +22,12 @@ body {
         }
 
         .content-depoimentos {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
 
           gap: 30px;
           width: 100%;
@@ -51,7 +55,9 @@ body {
       .depoimentos {
         .container {
           .content-depoimentos {
-            justify-content: unset;
+            -webkit-box-pack: unset;
+                -ms-flex-pack: unset;
+                    justify-content: unset;
           }
         }
       }
